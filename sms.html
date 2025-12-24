@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messages</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+body{
+    background:#dcdcdc;
+}
+
+/* PHONE */
+.phone{
+    width:360px;
+    height:690px;
+    margin:20px auto;
+    background:#fff;
+    border-radius:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+
+/* STATUS BAR */
+.status-bar{
+    height:26px;
+    background:#000;
+    color:#fff;
+    font-size:12px;
+    padding:4px 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.icons span{
+    margin-left:6px;
+}
+
+/* HEADER */
+.header{
+    background:#ffffff;
+    border-bottom:1px solid #ddd;
+    padding:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.back{
+    font-size:20px;
+    color:#1a73e8;
+}
+
+.sender{
+    display:flex;
+    flex-direction:column;
+}
+
+.sender-name{
+    font-weight:600;
+    font-size:15px;
+}
+
+.sender-sub{
+    font-size:12px;
+    color:#777;
+}
+
+/* CHAT */
+.chat{
+    flex:1;
+    padding:15px;
+    background:#f6f6f6;
+}
+
+/* MESSAGE BUBBLE */
+.bubble{
+    background:#fff;
+    max-width:88%;
+    padding:14px 16px;
+    border-radius:18px;
+    font-size:14px;
+    line-height:1.45;
+    box-shadow:0 2px 8px rgba(0,0,0,0.18);
+}
+
+.bubble strong{
+    font-weight:600;
+}
+
+.bubble a{
+    color:#1a73e8;
+    text-decoration:none;
+    font-weight:500;
+    word-break:break-all;
+}
+
+.bubble a:hover{
+    text-decoration:underline;
+}
+
+/* TIME */
+.time{
+    font-size:11px;
+    color:#888;
+    margin-top:6px;
+}
+
+/* INPUT BAR */
+.input-bar{
+    padding:10px;
+    background:#f0f0f0;
+    border-top:1px solid #ddd;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.input{
+    flex:1;
+    background:#fff;
+    padding:10px 14px;
+    border-radius:20px;
+    font-size:14px;
+    color:#999;
+}
+
+.send{
+    font-size:20px;
+    color:#1a73e8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="phone">
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+        <div>2:14</div>
+        <div class="icons">
+            <span>📶</span>
+            <span>📡</span>
+            <span>🔋 87%</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="back">←</div>
+        <div class="sender">
+            <div class="sender-name">SecureBank-IN</div>
+            <div class="sender-sub">Verified Business</div>
+        </div>
+    </div>
+
+    <!-- CHAT -->
+    <div class="chat">
+        <div class="bubble">
+            Dear Customer,<br><br>
+
+            Due to <strong>suspicious login activity</strong>, your SecureBank account
+            will be <strong>temporarily restricted today</strong>.<br><br>
+
+            Please complete verification immediately to avoid permanent suspension.<br><br>
+
+            🔗 <a href="https://rana-shraddha.github.io/smishing/otp.html">
+            https://securebank-verify.in
+            </a>
+
+            <div class="time">Today · 2:14 PM</div>
+        </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-bar">
+        <div class="input">Text message</div>
+        <div class="send">➤</div>
+    </div>
+
+</div>
+
+</body>
+</html>
